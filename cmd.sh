@@ -1,3 +1,3 @@
-gcc a.c -O2 -o sysinfo_log4k.elf
+gcc main.c -O2 -o sysinfo_log4k.elf
 
 systemctl enable --now task.timer
