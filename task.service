@@ -1,0 +1,6 @@
+[Unit]
+Description=Record sysinfo every 2 seconds
+StartLimitBurst=3
+StartLimitIntervalSec=1
+[Service]
+ExecStart=/path/to/executable/sysinfo_log4k.elf /path/to/recordfile/sysinfo_log_2s.bin

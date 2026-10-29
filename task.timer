@@ -1,0 +1,10 @@
+[Unit]
+Description=Record sysinfo every 2 seconds
+StartLimitBurst=3
+StartLimitIntervalSec=1
+[Timer]
+OnBootSec=2s
+OnUnitActiveSec=2s
+AccuracySec=1s
+[Install]
+WantedBy=timers.target
